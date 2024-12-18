@@ -8,12 +8,10 @@ import User from "./components/pages/User";
 import { GithubProvider } from "./components/context/github/GithubContext";
 import { AlertContextProvider } from "./components/context/alert/AlertContext";
 import Alert from "./components/element/Alert";
-import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
   return (
     <GithubProvider>
-      <SpeedInsights />
       <AlertContextProvider>
         <Router>
           <div className="flex flex-col justify-between h-screen">
